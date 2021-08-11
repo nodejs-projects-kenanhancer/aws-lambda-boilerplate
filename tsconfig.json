@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "commonJs",
+    "target": "es2020",
+    "lib": ["es2020"],
+    "allowJs": true,
+    "sourceMap": true
+  },
+  "files": ["src/index.ts"]
+}

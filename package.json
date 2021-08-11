@@ -1,0 +1,47 @@
+{
+  "name": "aws-lambda-boilerplate",
+  "version": "1.0.0",
+  "description": "aws-lambda-boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node dist/index.js",
+    "start:dev": "npm-run-all --parallel watch nodemon",
+    "nodemon": "nodemon dist/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "lambda"
+  ],
+  "author": "Kenan Hancer",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.81",
+    "@webpack-cli/generators": "^2.2.0",
+    "@zeit/ncc": "^0.22.3",
+    "cucumber": "^7.0.0-rc.0",
+    "cucumber-html-reporter": "^5.4.0",
+    "cucumber-pretty": "^6.0.0",
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.4",
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.3.5",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.6"
+  }
+}
